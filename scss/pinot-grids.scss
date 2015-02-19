@@ -1,1 +1,10 @@
-@import 'partials/base' ;
+// Importing the variables first
+@import "partials/vars" ;
+
+
+// Importing the base mixins
+
+@import "mixins/base-mixin";
+
+// Partials
+@import "partials/base" ;

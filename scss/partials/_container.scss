@@ -1,0 +1,20 @@
+/* This is grid container */
+
+.container
+{
+	@include container ;
+
+	@media(min-width: $screen-small-min)
+	{
+		width: $container-small ;
+	}
+
+	@media(min-width: $screen-desk-min)
+	{
+		width: $container-desk ;
+	}
+	@media(min-width: $screen-wide-min)
+	{
+		width: $container-wide ;
+	}
+}	
