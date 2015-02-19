@@ -1,0 +1,23 @@
+// Making desktop columns
+
+@mixin make-desk-column($columns , $grid-gutter-width)
+{
+	position: relative ;
+	min-height: 1px ;
+	padding-left: ($grid-gutter-width / 2) ;
+	padding-right: ($grid-gutter-width / 2) ;
+
+	@media (min-width: $screen-desk-min)
+	{
+		float: left ;
+		width: percentage(($columns / $grid-gutter-width)) ;
+	}
+}
+
+@mixin make-desk-column-offset($columns)
+{
+	@media(min-width: $screen-desk-min)
+	{
+		margin-left: percentage(($columns / $grid-gutter-width)) ;
+	}
+}

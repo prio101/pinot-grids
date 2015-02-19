@@ -1,0 +1,23 @@
+// Making wide columns
+
+@mixin make-wide-column($columns , $grid-gutter-width)
+{
+	position: relative ;
+	min-height: 1px ;
+	padding-left: ($grid-gutter-width / 2) ;
+	padding-right: ($grid-gutter-width / 2) ;
+
+	@media (min-width: $screen-wide-min)
+	{
+		float: left ;
+		width: percentage(($columns / $grid-gutter-width)) ;
+	}
+}
+
+@mixin make-wide-column-offset($columns)
+{
+	@media(min-width: $screen-wide-min)
+	{
+		margin-left: percentage(($columns / $grid-gutter-width)) ;
+	}
+}
