@@ -12,3 +12,11 @@
 		width: percentage(($columns / $grid-columns)) ;
 	}
 }
+
+@mixin make-tab-column-offset($columns)
+{
+	@media(min-width: $screen-tab-min)
+	{
+		margin-left: percentage($columns / $grid-columns) ;
+	}
+}
