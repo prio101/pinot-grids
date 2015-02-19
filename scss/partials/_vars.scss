@@ -1,0 +1,57 @@
+/* Variables of the Breakpoints */
+
+// Breakpoints of the device screens
+// Where the screen will be resized in newer look and behaviour
+
+// Screen breakpoints of small device
+
+$screen-small :  360px !default ;
+
+$screen-small-min:	$screen-small !default ;
+
+// Screen breakponits of the tab
+
+$screen-tab: 	768px !default ;
+$screen-tab-min: $screen-tab !default ;
+
+
+
+// Screen breakponits of the desktop
+
+$screen-desk: 	990px !default ;
+$screen-desk-min: $screen-desk !default ;
+
+
+
+// Screen breakponits of the wide screen
+
+$screen-wide: 	1150px !default ;
+$screen-wide-min: $screen-wide !default ;
+
+
+
+
+/* Variables of the Default grids */
+
+// Number in the columns in the grids
+
+$grid-col: 10 !default ;
+
+// Padding between the columns. Which is divided by 2
+$grid-gutter-width:  20px !default ;
+
+
+
+/* Container sizes */
+
+// Small screen
+$container-small:   (730px + $grid-gutter-width ) !default ;
+
+
+// Desktop screen   
+
+$container-desk: (950px + $grid-gutter-width) !default ;
+
+// Wide screen 
+
+$container-wide: (1100px + $grid-gutter-width) !default ;

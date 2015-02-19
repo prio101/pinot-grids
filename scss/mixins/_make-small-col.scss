@@ -1,0 +1,19 @@
+// making small-columns
+
+@mixin make-small-column($columns , $grid-gutter-width)
+{
+	position: relative ;
+	float: left ;
+	width: percentage(($columns / $grid-columns)) ;
+	min-height: 1px ;
+	padding-left: ($grid-gutter-width / 2) ;
+	padding-right: ($grid-gutter-width / 2) ;
+}
+
+@mixin make-small-column-offset()
+{
+	margin-left: percentage(($columns / $grid-columns)) ;
+}
+
+
+

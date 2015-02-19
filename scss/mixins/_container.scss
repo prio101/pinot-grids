@@ -1,0 +1,10 @@
+// Mixin of container
+
+@mixin container($grid-guttrer-width)
+{
+	margin-left:auto ;
+	margin-right:auto ;
+	padding-left: ($grid-guttrer-width / 2 ) ;
+	padding-right: ($grid-guttrer-width / 2) ;
+	@include clearfix ;
+}
