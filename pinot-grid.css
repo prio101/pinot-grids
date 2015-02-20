@@ -7,28 +7,28 @@
 /* This will take the data and create a grid system specifically for the class */
 /* This is grid container */
 .container {
-  margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px; }
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
   .container:before, .container:after {
     content: " ";
     display: table; }
   .container:after {
     clear: both; }
-  @media (min-width: 360px) {
+  @media (min-width: 480px) {
     .container {
       width: 750px; } }
-  @media (min-width: 990px) {
+  @media (min-width: 940px) {
     .container {
       width: 970px; } }
-  @media (min-width: 1150px) {
+  @media (min-width: 1140px) {
     .container {
-      width: 1120px; } }
+      width: 1170px; } }
 
 .row {
-  margin-left: -10px;
-  margin-right: -10px; }
+  margin-left: -15px;
+  margin-right: -15px; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -36,275 +36,179 @@
     clear: both; }
 
 /* Grid system */
-.pi-col-small-1, .pi-col-tab-1, .pi-col-desk-1, .pi-col-wide-1, .pi-col-small-2, .pi-col-tab-2, .pi-col-desk-2, .pi-col-wide-2, .pi-col-small-3, .pi-col-tab-3, .pi-col-desk-3, .pi-col-wide-3, .pi-col-small-4, .pi-col-tab-4, .pi-col-desk-4, .pi-col-wide-4, .pi-col-small-5, .pi-col-tab-5, .pi-col-desk-5, .pi-col-wide-5, .pi-col-small-6, .pi-col-tab-6, .pi-col-desk-6, .pi-col-wide-6, .pi-col-small-7, .pi-col-tab-7, .pi-col-desk-7, .pi-col-wide-7, .pi-col-small-8, .pi-col-tab-8, .pi-col-desk-8, .pi-col-wide-8, .pi-col-small-9, .pi-col-tab-9, .pi-col-desk-9, .pi-col-wide-9, .pi-col-small-10, .pi-col-tab-10, .pi-col-desk-10, .pi-col-wide-10 {
+.pi-col-small-1, .pi-col-tab-1, .pi-col-desk-1, .pi-col-wide-1, .pi-col-small-2, .pi-col-tab-2, .pi-col-desk-2, .pi-col-wide-2, .pi-col-small-3, .pi-col-tab-3, .pi-col-desk-3, .pi-col-wide-3, .pi-col-small-4, .pi-col-tab-4, .pi-col-desk-4, .pi-col-wide-4, .pi-col-small-5, .pi-col-tab-5, .pi-col-desk-5, .pi-col-wide-5, .pi-col-small-6, .pi-col-tab-6, .pi-col-desk-6, .pi-col-wide-6 {
   position: relative;
   min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 15px;
+  padding-right: 15px; }
 
-.pi-col-small-1, .pi-col-small-2, .pi-col-small-3, .pi-col-small-4, .pi-col-small-5, .pi-col-small-6, .pi-col-small-7, .pi-col-small-8, .pi-col-small-9, .pi-col-small-10 {
+.pi-col-small-1, .pi-col-small-2, .pi-col-small-3, .pi-col-small-4, .pi-col-small-5, .pi-col-small-6 {
   float: left; }
 
 .pi-col-small-1 {
-  width: 10%; }
+  width: 16.66667%; }
 
 .pi-col-small-2 {
-  width: 20%; }
+  width: 33.33333%; }
 
 .pi-col-small-3 {
-  width: 30%; }
-
-.pi-col-small-4 {
-  width: 40%; }
-
-.pi-col-small-5 {
   width: 50%; }
 
+.pi-col-small-4 {
+  width: 66.66667%; }
+
+.pi-col-small-5 {
+  width: 83.33333%; }
+
 .pi-col-small-6 {
-  width: 60%; }
-
-.pi-col-small-7 {
-  width: 70%; }
-
-.pi-col-small-8 {
-  width: 80%; }
-
-.pi-col-small-9 {
-  width: 90%; }
-
-.pi-col-small-10 {
   width: 100%; }
 
 .pi-col-small-offset-0 {
   margin-left: 0%; }
 
 .pi-col-small-offset-1 {
-  margin-left: 10%; }
+  margin-left: 16.66667%; }
 
 .pi-col-small-offset-2 {
-  margin-left: 20%; }
+  margin-left: 33.33333%; }
 
 .pi-col-small-offset-3 {
-  margin-left: 30%; }
-
-.pi-col-small-offset-4 {
-  margin-left: 40%; }
-
-.pi-col-small-offset-5 {
   margin-left: 50%; }
 
+.pi-col-small-offset-4 {
+  margin-left: 66.66667%; }
+
+.pi-col-small-offset-5 {
+  margin-left: 83.33333%; }
+
 .pi-col-small-offset-6 {
-  margin-left: 60%; }
-
-.pi-col-small-offset-7 {
-  margin-left: 70%; }
-
-.pi-col-small-offset-8 {
-  margin-left: 80%; }
-
-.pi-col-small-offset-9 {
-  margin-left: 90%; }
-
-.pi-col-small-offset-10 {
   margin-left: 100%; }
 
-@media (min-width: 768px) {
-  .pi-col-tab-1, .pi-col-tab-2, .pi-col-tab-3, .pi-col-tab-4, .pi-col-tab-5, .pi-col-tab-6, .pi-col-tab-7, .pi-col-tab-8, .pi-col-tab-9, .pi-col-tab-10 {
+@media (min-width: 720px) {
+  .pi-col-tab-1, .pi-col-tab-2, .pi-col-tab-3, .pi-col-tab-4, .pi-col-tab-5, .pi-col-tab-6 {
     float: left; }
 
   .pi-col-tab-1 {
-    width: 10%; }
+    width: 16.66667%; }
 
   .pi-col-tab-2 {
-    width: 20%; }
+    width: 33.33333%; }
 
   .pi-col-tab-3 {
-    width: 30%; }
-
-  .pi-col-tab-4 {
-    width: 40%; }
-
-  .pi-col-tab-5 {
     width: 50%; }
 
+  .pi-col-tab-4 {
+    width: 66.66667%; }
+
+  .pi-col-tab-5 {
+    width: 83.33333%; }
+
   .pi-col-tab-6 {
-    width: 60%; }
-
-  .pi-col-tab-7 {
-    width: 70%; }
-
-  .pi-col-tab-8 {
-    width: 80%; }
-
-  .pi-col-tab-9 {
-    width: 90%; }
-
-  .pi-col-tab-10 {
     width: 100%; }
 
   .pi-col-tab-offset-0 {
     margin-left: 0%; }
 
   .pi-col-tab-offset-1 {
-    margin-left: 10%; }
+    margin-left: 16.66667%; }
 
   .pi-col-tab-offset-2 {
-    margin-left: 20%; }
+    margin-left: 33.33333%; }
 
   .pi-col-tab-offset-3 {
-    margin-left: 30%; }
-
-  .pi-col-tab-offset-4 {
-    margin-left: 40%; }
-
-  .pi-col-tab-offset-5 {
     margin-left: 50%; }
 
+  .pi-col-tab-offset-4 {
+    margin-left: 66.66667%; }
+
+  .pi-col-tab-offset-5 {
+    margin-left: 83.33333%; }
+
   .pi-col-tab-offset-6 {
-    margin-left: 60%; }
-
-  .pi-col-tab-offset-7 {
-    margin-left: 70%; }
-
-  .pi-col-tab-offset-8 {
-    margin-left: 80%; }
-
-  .pi-col-tab-offset-9 {
-    margin-left: 90%; }
-
-  .pi-col-tab-offset-10 {
     margin-left: 100%; } }
-@media (min-width: 990px) {
-  .pi-col-desk-1, .pi-col-desk-2, .pi-col-desk-3, .pi-col-desk-4, .pi-col-desk-5, .pi-col-desk-6, .pi-col-desk-7, .pi-col-desk-8, .pi-col-desk-9, .pi-col-desk-10 {
+@media (min-width: 940px) {
+  .pi-col-desk-1, .pi-col-desk-2, .pi-col-desk-3, .pi-col-desk-4, .pi-col-desk-5, .pi-col-desk-6 {
     float: left; }
 
   .pi-col-desk-1 {
-    width: 10%; }
+    width: 16.66667%; }
 
   .pi-col-desk-2 {
-    width: 20%; }
+    width: 33.33333%; }
 
   .pi-col-desk-3 {
-    width: 30%; }
-
-  .pi-col-desk-4 {
-    width: 40%; }
-
-  .pi-col-desk-5 {
     width: 50%; }
 
+  .pi-col-desk-4 {
+    width: 66.66667%; }
+
+  .pi-col-desk-5 {
+    width: 83.33333%; }
+
   .pi-col-desk-6 {
-    width: 60%; }
-
-  .pi-col-desk-7 {
-    width: 70%; }
-
-  .pi-col-desk-8 {
-    width: 80%; }
-
-  .pi-col-desk-9 {
-    width: 90%; }
-
-  .pi-col-desk-10 {
     width: 100%; }
 
   .pi-col-desk-offset-0 {
     margin-left: 0%; }
 
   .pi-col-desk-offset-1 {
-    margin-left: 10%; }
+    margin-left: 16.66667%; }
 
   .pi-col-desk-offset-2 {
-    margin-left: 20%; }
+    margin-left: 33.33333%; }
 
   .pi-col-desk-offset-3 {
-    margin-left: 30%; }
-
-  .pi-col-desk-offset-4 {
-    margin-left: 40%; }
-
-  .pi-col-desk-offset-5 {
     margin-left: 50%; }
 
+  .pi-col-desk-offset-4 {
+    margin-left: 66.66667%; }
+
+  .pi-col-desk-offset-5 {
+    margin-left: 83.33333%; }
+
   .pi-col-desk-offset-6 {
-    margin-left: 60%; }
-
-  .pi-col-desk-offset-7 {
-    margin-left: 70%; }
-
-  .pi-col-desk-offset-8 {
-    margin-left: 80%; }
-
-  .pi-col-desk-offset-9 {
-    margin-left: 90%; }
-
-  .pi-col-desk-offset-10 {
     margin-left: 100%; } }
-@media (min-width: 1150px) {
-  .pi-col-wide-1, .pi-col-wide-2, .pi-col-wide-3, .pi-col-wide-4, .pi-col-wide-5, .pi-col-wide-6, .pi-col-wide-7, .pi-col-wide-8, .pi-col-wide-9, .pi-col-wide-10 {
+@media (min-width: 1140px) {
+  .pi-col-wide-1, .pi-col-wide-2, .pi-col-wide-3, .pi-col-wide-4, .pi-col-wide-5, .pi-col-wide-6 {
     float: left; }
 
   .pi-col-wide-1 {
-    width: 10%; }
+    width: 16.66667%; }
 
   .pi-col-wide-2 {
-    width: 20%; }
+    width: 33.33333%; }
 
   .pi-col-wide-3 {
-    width: 30%; }
-
-  .pi-col-wide-4 {
-    width: 40%; }
-
-  .pi-col-wide-5 {
     width: 50%; }
 
+  .pi-col-wide-4 {
+    width: 66.66667%; }
+
+  .pi-col-wide-5 {
+    width: 83.33333%; }
+
   .pi-col-wide-6 {
-    width: 60%; }
-
-  .pi-col-wide-7 {
-    width: 70%; }
-
-  .pi-col-wide-8 {
-    width: 80%; }
-
-  .pi-col-wide-9 {
-    width: 90%; }
-
-  .pi-col-wide-10 {
     width: 100%; }
 
   .pi-col-wide-offset-0 {
     margin-left: 0%; }
 
   .pi-col-wide-offset-1 {
-    margin-left: 10%; }
+    margin-left: 16.66667%; }
 
   .pi-col-wide-offset-2 {
-    margin-left: 20%; }
+    margin-left: 33.33333%; }
 
   .pi-col-wide-offset-3 {
-    margin-left: 30%; }
-
-  .pi-col-wide-offset-4 {
-    margin-left: 40%; }
-
-  .pi-col-wide-offset-5 {
     margin-left: 50%; }
 
+  .pi-col-wide-offset-4 {
+    margin-left: 66.66667%; }
+
+  .pi-col-wide-offset-5 {
+    margin-left: 83.33333%; }
+
   .pi-col-wide-offset-6 {
-    margin-left: 60%; }
-
-  .pi-col-wide-offset-7 {
-    margin-left: 70%; }
-
-  .pi-col-wide-offset-8 {
-    margin-left: 80%; }
-
-  .pi-col-wide-offset-9 {
-    margin-left: 90%; }
-
-  .pi-col-wide-offset-10 {
     margin-left: 100%; } }
 
 /*# sourceMappingURL=pinot-grid.css.map */

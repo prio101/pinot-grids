@@ -4,8 +4,8 @@
 
 @mixin container($value : $grid-gutter-width)
 {
-	margin-left:auto ;
 	margin-right:auto ;
+	margin-left:auto ;
 	padding-left: ($value/ 2 ) ;
 	padding-right: ($value / 2) ;
 	@include clearfix ;
