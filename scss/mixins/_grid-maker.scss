@@ -1,0 +1,64 @@
+/* This will take the data and create a grid system specifically for the class */
+
+@mixin grid-col($i: 1 , $list: ".pi-col-small-#{$i},.pi-col-tab-#{$i},.pi-col-desk-#{$i},.pi-col-wide-#{$i} ")
+{
+	@for $i from (1 + 1) through $grid-col
+	{
+		$list: "#{$list}, .pi-col-small-#{$i},.pi-col-tab-#{$i},.pi-col-desk-#{$i},.pi-col-wide-#{$i}";
+	}
+	#{$list}
+	{
+		position: relative ;
+		min-height: 1px ;
+		padding-left: ($grid-gutter-width /2 ) ;
+		padding-right: ($grid-gutter-width / 2) ;
+	}
+
+ }
+
+ @mixin float-grid-col($class, $i:1 , $list: ".pi-col-#{$class}-#{$i}")
+ {
+ 	@for $i from( 1+1 ) through $grid-col
+ 	{
+ 		$list: "#{$list}, .pi-col-#{$class}-#{$i}";
+
+ 	}
+ 	#{$list}
+ 	{
+ 		float: left ;
+ 	}
+ }
+
+ @mixin juiced-grid-col($index , $class , $type)
+ {
+ 	@if($type == width) and ($index > 0)
+ 	{
+ 		.pi-col-#{$class}-#{$index}
+ 		{
+ 			width: percentage(($index / $grid-col)) ;
+ 		}
+ 	}
+ 	@if($type == offset)
+ 	{
+ 		.pi-col-#{$class}-offset-#{$index}
+ 		{
+ 			margin-left: percentage(($index / $grid-col)) ;
+ 		}
+ 	}
+ }
+
+ @mixin grid-loop-col($col , $class , $type)
+{
+	@for $i from 0 through $col
+	{
+		@include juiced-grid-col($i, $class , $type) ;
+	}
+}
+
+
+@mixin grid-maker($class)
+{
+	@include float-grid-col($class) ;
+	@include grid-loop-col($grid-col, $class , width);
+	@include grid-loop-col($grid-col, $class , offset) ;
+}

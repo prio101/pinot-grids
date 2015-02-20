@@ -1,9 +1,9 @@
 // Making row mixins for the collections of the coulmns
 
 
-@mixin make-row($grid-gutter-width)
+@mixin make-row( $value : $grid-gutter-width)
 {
-	margin-left: ($grid-gutter-width / -2 ) ;
-	margin-right: ($grid-gutter-width / -2 ) ;
+	margin-left: ($value / -2 ) ;
+	margin-right: ($value / -2 ) ;
 	@include clearfix ;
 } 

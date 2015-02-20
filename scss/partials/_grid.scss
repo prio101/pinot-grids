@@ -1,2 +1,23 @@
 /* Grid system */
+@include grid-col ;
 
+
+// Small grid
+@include grid-maker(small);
+
+// Tab grid
+@media(min-width: $screen-tab-min){
+	@include grid-maker(tab) ;
+}
+
+
+// Desktop grid
+@media(min-width: $screen-desk-min){
+	@include grid-maker(desk) ;
+}
+
+
+// Wide grid
+@media(min-width: $screen-wide-min){
+	@include grid-maker(wide) ;
+}
