@@ -1,25 +1,43 @@
 # Pinot - Grid System
 
 ---
+![Logo]()
+
+
+Author: [Mahabub Islam](http://mahabubislam.com)
 
 ## Features :
 
-*  Simple grids system.	
+* A simple stand alone grid system
 
+* Light and customizable
 
-## Still needs to do:
+* Comes with SCSS scripts - fully documented
 
-*  Making push col and pull col stuff.
+* Default 6 columns based grid. But can be customized to any need.
 
-*  Making Breakpoints more accurate with behavior.
 
 
 ### Columns class name:
- 
-pi-col-small-1 
 
-pi-col-tab-1
+* pi-col-small-*
 
-pi-col-desk-1
+* pi-col-tab-*
 
-pi-col-wide-1
+* pi-col-desk-*
+
+* pi-col-wide-*
+
+---
+
+* pi-col-small-offset-*
+
+* pi-col-tab-offset-*
+
+* pi-col-desk-offset-*
+
+* pi-col-wide-offset-*
+
+
+
+### License: MIT License
