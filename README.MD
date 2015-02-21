@@ -1,7 +1,7 @@
 # Pinot - Grid System
 
 ---
-![Logo]()
+![Logo](https://raw.githubusercontent.com/prio101/pinot-grids/master/logo.jpeg)
 
 
 Author: [Mahabub Islam](http://mahabubislam.com)
